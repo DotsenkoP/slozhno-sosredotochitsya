@@ -3,3 +3,255 @@
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 }
+
+body {
+  margin: 0 auto;
+  background-image: url("../images/cover-image-light.png");   
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: black;
+  font-family: 'IBM Plex mono';
+  color: #353430;
+  max-width: 1440px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+
+  @media (width <= 768px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+.header {
+  display: grid;
+  grid-template-rows: 1fr min-content 1fr;
+  align-items: center;
+  width: 100%;
+  min-height: 768px;
+  height: 100vh;
+  padding: 0 20px;
+}
+
+.border-item1 {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  right: 20px;
+  border-top: solid 1px #353430;
+  border-right: solid 1px #353430;
+}
+
+.border-item2 {
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  bottom: 20px;
+  left: 20px; 
+  border-bottom: solid 1px #353430;
+  border-left: solid 1px #353430;
+}
+
+
+nav.header__theme-menu {
+  display: flex; 
+  align-self: start;
+  justify-self: center;
+  margin-top: 20px;
+
+  @media (width <= 768px) {
+      align-self: center;
+      justify-self: end;
+      margin-top: 0;
+  }
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  color: inherit;
+  border: none;
+  text-transform: lowercase;
+  font-size: 18px;
+}
+
+.button:active {
+  border: 2px solid #FF0070;
+  color: #FF0070;
+}
+
+.button:hover {
+  border: 2px solid rgba(255, 0, 112, 0.4);
+  color: #FF0070;
+}
+
+.button:focus {
+  outline: none;
+  border-bottom: 2px solid #FF0070;
+  color: #FF0070;
+}
+
+.header-span-text {
+  font-size: 130px;
+  color: #FFC2E6;
+  text-shadow: 0 4px #FF0070;
+  font-family: 'IBM Plex mono';
+  font-weight: bold;
+  word-spacing: 1.5rem;
+
+  @media (width <= 580px) {
+    line-height: 82.5%;
+  }
+}
+
+.text-background-color {
+  background-color: #FF8DCB;
+}
+
+.header-p {
+  max-width: 491px;
+  font-weight: bold;
+  justify-self: flex-end;
+}
+
+.content {
+  padding: 0 20px;
+  display: grid;
+  gap: 80px;
+}
+
+.section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+
+  @media (width <= 580px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.section__text-wrapper {
+  grid-column: span 2;
+  display: grid;
+  gap: 20px;
+}
+
+.title-style {
+  font-size: 18px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.title-style-fate {
+  /* grid-column: 1 / -1; */
+  margin-bottom: 0;
+}
+
+.section__what {
+  & .section__text-wrapper {
+    grid-column: 1 / -1;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (width <= 768px) {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+.text-link {
+  text-decoration: none;
+  text-shadow: 2px 2px 0 #FF8DCB;
+
+  @media (width <= 580px) {
+    text-shadow: 1px 1px 0 #FF8DCB;
+  }
+}
+
+.text-link:hover {
+  border-bottom: 2px solid #353430;
+}
+
+.text-link:focus {
+  border: 2px solid #353430;
+  border-radius: 0;
+}
+
+
+
+.image-section {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+}
+
+
+.grid-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.sunset {
+  grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.ice {
+  grid-column-start: 5;
+    grid-column-end: 7;
+    grid-row-start: 1;
+    grid-row-end: 5;
+}
+
+.tape {
+  grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 3;
+    grid-row-end: 8;
+}
+
+.books {
+  grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 5;
+}
+
+.street {
+  grid-column-start: 3;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 8;
+}
+
+.image-section {
+  @media (width <= 580px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.footer {
+  /* max-height: 768px; */
+  height: 100vh;
+  display: flex;
+  margin-top: 60px;
+}
+
+.footer-text {
+  display: block;
+  position: relative;
+  margin: auto;
+  font-size: 157px;
+  color: #FFC2E6;
+  text-shadow: 0 4px #FF0070;
+  font-family: 'IBM Plex mono';
+  font-weight: bold;
+}
