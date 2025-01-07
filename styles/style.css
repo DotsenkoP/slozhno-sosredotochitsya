@@ -6,13 +6,13 @@
 
 body {
   margin: 0 auto;
-  background-image: url("../images/cover-image-light.png");   
+  background-image: url("../images/cover-image-light.png");
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   color: black;
-  font-family: 'IBM Plex mono';
+  font-family: "IBM Plex mono", "Arial", sans-serif;
   color: #353430;
   max-width: 1440px;
 }
@@ -38,7 +38,7 @@ ul {
   padding: 0 20px;
 }
 
-.border-item1 {
+.decorated-zone-top {
   height: 25px;
   width: 25px;
   position: absolute;
@@ -47,27 +47,26 @@ ul {
   border-right: solid 1px #353430;
 }
 
-.border-item2 {
+.decorated-zone-bottom {
   height: 25px;
   width: 25px;
   position: absolute;
   bottom: 20px;
-  left: 20px; 
+  left: 20px;
   border-bottom: solid 1px #353430;
   border-left: solid 1px #353430;
 }
 
-
 nav.header__theme-menu {
-  display: flex; 
+  display: flex;
   align-self: start;
   justify-self: center;
   margin-top: 20px;
 
   @media (width <= 768px) {
-      align-self: center;
-      justify-self: end;
-      margin-top: 0;
+    align-self: center;
+    justify-self: end;
+    margin-top: 0;
   }
 }
 
@@ -79,40 +78,41 @@ nav.header__theme-menu {
   font-size: 18px;
 }
 
-.button:active {
-  border: 2px solid #FF0070;
-  color: #FF0070;
+.button:enabled {
+  border: 2px solid #ff0070;
+  color: #ff0070;
 }
 
 .button:hover {
   border: 2px solid rgba(255, 0, 112, 0.4);
-  color: #FF0070;
+  color: #ff0070;
 }
 
 .button:focus {
   outline: none;
-  border-bottom: 2px solid #FF0070;
-  color: #FF0070;
+  border-bottom: 2px solid #ff0070;
+  color: #ff0070;
 }
 
 .header-span-text {
-  font-size: 130px;
-  color: #FFC2E6;
-  text-shadow: 0 4px #FF0070;
-  font-family: 'IBM Plex mono';
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  color: #ffc2e6;
+  text-shadow: 0 4px #ff0070;
+  font-family: "IBM Plex mono", "Arial", sans-serif;
   font-weight: bold;
   word-spacing: 1.5rem;
 
   @media (width <= 580px) {
     line-height: 82.5%;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 }
 
 .text-background-color {
-  background-color: #FF8DCB;
+  background-color: #ff8dcb;
 }
 
-.header-p {
+.header-main-text {
   max-width: 491px;
   font-weight: bold;
   justify-self: flex-end;
@@ -164,15 +164,15 @@ nav.header__theme-menu {
 
 .text-link {
   text-decoration: none;
-  text-shadow: 2px 2px 0 #FF8DCB;
+  text-shadow: 2px 2px 0 #ff8dcb;
 
   @media (width <= 580px) {
-    text-shadow: 1px 1px 0 #FF8DCB;
+    text-shadow: 1px 1px 0 #ff8dcb;
   }
 }
 
 .text-link:hover {
-  border-bottom: 2px solid #353430;
+  border-bottom: 2px solid currentColor;
 }
 
 .text-link:focus {
@@ -180,15 +180,12 @@ nav.header__theme-menu {
   border-radius: 0;
 }
 
-
-
 .image-section {
   display: grid;
   gap: 20px;
   grid-template-columns: repeat(6, 1fr);
   grid-template-rows: repeat(7, 1fr);
 }
-
 
 .grid-image {
   width: 100%;
@@ -198,37 +195,37 @@ nav.header__theme-menu {
 
 .sunset {
   grid-column-start: 1;
-    grid-column-end: 5;
-    grid-row-start: 1;
-    grid-row-end: 3;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 .ice {
   grid-column-start: 5;
-    grid-column-end: 7;
-    grid-row-start: 1;
-    grid-row-end: 5;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 5;
 }
 
 .tape {
   grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 3;
-    grid-row-end: 8;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 8;
 }
 
 .books {
   grid-column-start: 3;
-    grid-column-end: 5;
-    grid-row-start: 3;
-    grid-row-end: 5;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 5;
 }
 
 .street {
   grid-column-start: 3;
-    grid-column-end: 7;
-    grid-row-start: 5;
-    grid-row-end: 8;
+  grid-column-end: 7;
+  grid-row-start: 5;
+  grid-row-end: 8;
 }
 
 .image-section {
@@ -249,9 +246,14 @@ nav.header__theme-menu {
   display: block;
   position: relative;
   margin: auto;
-  font-size: 157px;
-  color: #FFC2E6;
-  text-shadow: 0 4px #FF0070;
-  font-family: 'IBM Plex mono';
+  font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  color: #ffc2e6;
+  text-shadow: 0 4px #ff0070;
+  font-family: "IBM Plex mono", "Arial", sans-serif;
   font-weight: bold;
+
+  @media (width <= 580px) {
+    line-height: 82.5%;
+    font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  }
 }

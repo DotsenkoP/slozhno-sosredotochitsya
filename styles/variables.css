@@ -6,4 +6,6 @@
   --background-image-dark: url("../images/cover-image-dark.png");
   --background-image-light: url("../images/cover-image-light.png");
   --text-color: #F1B2CE;
+  --background-color-dark: #000028;
+  --button-color-dark: #FF0070;
 }
