@@ -11,4 +11,12 @@
   */
   background-color: #fff1f7;
   background-image: var(--background-image-light);
+  --text-background-color: #FF8DCB;
+  --span-text-color: #FFC2E6;
+  --text-color: #353430;
+  --title-color: #353430;
+  --main-title-color: #353430;
+  --button-element-color: #353430;
+  --button-element-color-hover: rgba(50, 49, 45, 0.4);
+  --button-element-color-rec: none;
 }

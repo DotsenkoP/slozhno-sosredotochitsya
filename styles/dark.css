@@ -12,55 +12,19 @@
   */
   background-color: var(--background-color-dark);
   background-image: var(--background-image-dark);
+  --text-background-color: #FF0070;
+  --span-text-color: #DB00FF;
+  --text-color: #F1B2CE;
+  --title-color: #000028;
+  --main-title-color: #FF0070;
+  --button-element-color: #FF0070;
+  --button-element-color-hover: rgba(255, 0, 112, 0.4);
+  --button-element-color-rec: #FF0070;
+
+
   
   
 }
 
 
  
-.page.theme_dark p {
-  color: var(--text-color);
-}
-
-.page.theme_dark button {
-  color: #FF0070;
-}
-
-.page.theme_dark .header-main-text {
-  color: #000028;
-  font-weight: bold;
-}
-
-.page.theme_dark .text-background-color {
-  background-color: #FF0070;
-}
-
-.page.theme_dark span {
-  color: #DB00FF;
-}
-
-.page.theme_dark h2 {
-  color: #FF0070;
-}
-
-.page.theme_dark h3, h4 {
-  color: #000028;
-}
-
-.page.theme_dark .text-link {
-  color: #FF8DCB;
-  text-shadow: 2px 2px 0 #FF0070;
-}
-
-.page.theme_dark .text-link:hover {
-  border-bottom: 2px solid #FF8DCB;
-}
-
-.page.theme_dark .text-link:focus {
-  border: 2px solid #FF8DCB;
-  border-radius: 0;
-}
-
-.page.theme_dark .header__theme-menu::after {
-  
-}
