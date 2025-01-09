@@ -6,7 +6,7 @@
 
 body {
   margin: 0 auto;
-  background-image: url("../images/cover-image-light.png");
+  background-image: var(--background-image);
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-position: center;
@@ -115,10 +115,14 @@ nav.header__theme-menu {
   color: var(--button-element-color);
 }
 
-.button:focus {
+.button:focus-visible {
   outline: none;
   border-bottom: 2px solid var(--button-element-color);
   color: var(--button-element-color);
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none;
 }
 
 .header-span-text {

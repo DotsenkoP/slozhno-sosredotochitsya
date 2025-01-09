@@ -11,20 +11,27 @@
   
   */
   background-color: var(--background-color-dark);
-  background-image: var(--background-image-dark);
-  --text-background-color: #FF0070;
-  --span-text-color: #DB00FF;
-  --text-color: #F1B2CE;
+  --background-image: url("../images/cover-image-dark.png");
+  --text-background-color: #ff0070;
+  --span-text-color: #db00ff;
+  --text-color: #f1b2ce;
   --title-color: #000028;
-  --main-title-color: #FF0070;
-  --button-element-color: #FF0070;
+  --main-title-color: #ff0070;
+  --button-element-color: #ff0070;
   --button-element-color-hover: rgba(255, 0, 112, 0.4);
-  --button-element-color-rec: #FF0070;
-
-
-  
-  
+  --button-element-color-rec: #ff0070;
 }
 
-
- 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-image: url("../images/cover-image-dark.png");
+    --text-background-color: #ff0070;
+    --span-text-color: #db00ff;
+    --text-color: #f1b2ce;
+    --title-color: #000028;
+    --main-title-color: #ff0070;
+    --button-element-color: #ff0070;
+    --button-element-color-hover: rgba(255, 0, 112, 0.4);
+    --button-element-color-rec: #ff0070;
+  }
+}
