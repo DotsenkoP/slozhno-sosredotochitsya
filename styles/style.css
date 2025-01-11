@@ -32,6 +32,7 @@ p {
 }
 
 .header {
+  position: relative;
   display: grid;
   grid-template-rows: 1fr min-content 1fr;
   align-items: center;
@@ -48,19 +49,21 @@ p {
   position: absolute;
   top: 18px;
   right: 50px;
+  display: var(--rec-display);
   font-size: 20px;
   color: var(--button-element-color-rec);
 }
 
-.circle {
+.rec::after {
+  content: "";
   width: 15px;
   height: 15px;
   background-color: var(--button-element-color-rec);
   border-radius: 50%;
   box-shadow: 0 0 4px 2px rgba(255, 0, 112, 0.5);
   position: absolute;
-  right: 25px;
-  top: 25px;
+  right: -25px;
+  top: 6px;
 }
 
 .decorated-zone-top {
@@ -278,6 +281,7 @@ h4 {
 
 .footer {
   /* max-height: 768px; */
+  position: relative;
   height: 100vh;
   display: flex;
   margin-top: 60px;

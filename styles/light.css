@@ -19,6 +19,7 @@
   --button-element-color: #353430;
   --button-element-color-hover: rgba(50, 49, 45, 0.4);
   --button-element-color-rec: none;
+  --rec-display: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -32,13 +33,6 @@
     --button-element-color: #353430;
     --button-element-color-hover: rgba(50, 49, 45, 0.4);
     --button-element-color-rec: none;
+    --rec-display: none;
   }
-}
-
-.page.theme_light .rec {
-  display: none;
-}
-
-.page.theme_light .circle {
-  display: none;
 }
